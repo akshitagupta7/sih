@@ -4,6 +4,7 @@
         <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
         <script src="https://d3js.org/d3.v5.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -13,17 +14,19 @@
         <div class="content">
 
             <form id="add-elements"></form>
-            <input type="text" name="name" placeholder="Mother's Name">
-                <input type="text" name="houseno" placeholder="House No">
-
-                <input type="text" name="phoneno" placeholder="Phone Number">
-     <button id="12">filer1</button>
-     <button id="14">filer2</button>
-           <ul id="list"></ul> 
+            <label>Name</label>
            
-
-        </div>           
-
+            <label>Phone Number</label>
+            <label>House Address</label>
+            <input type="radio" name="whatever" id="start" checked>ALL
+            <input type="radio" name="whatever" id="12">PH1
+            <input type="radio" name="whatever" id="14">PH2
+    
+           <ul id="list"></ul> 
+         
+          
+        </div>
+     
 <script>
   // Initialize Firebase
   // created the config object which has our project specs

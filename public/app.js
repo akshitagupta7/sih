@@ -15,7 +15,7 @@ function render(doc){
 	//dataset.push(doc.data().phone);
 	houseno.textContent=doc.data().houseno;
 
-	li.appendChild(name);
+    li.appendChild(name);
 	li.appendChild(phone);
 	li.appendChild(houseno);
 	list.appendChild(li);
@@ -30,14 +30,25 @@ db.collection('maternaldb').get().then((snapshot) => {
     }))
 });
 
+document.getElementById("start").addEventListener('click',(e)=>{
+    db.collection('maternaldb').get().then((snapshot) => {
+        list.innerHTML="";
+        console.log(snapshot.docs.forEach(doc => {
+            render(doc);
+        }))
+    });
+    });
+
 document.getElementById("12").addEventListener('click',(e)=>{
 db.collection('maternaldb').where("houseno","==","12").get().then((snapshot) => {
+    list.innerHTML="";
     console.log(snapshot.docs.forEach(doc => {
-        list.innerHTML="";
-        render(doc)
+        render(doc);
     }))
 });
 });
+
+
 
 document.getElementById("14").addEventListener('click',(e)=>{
 db.collection('maternaldb').where("houseno","==","14").get().then((snapshot) => {

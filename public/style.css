@@ -41,7 +41,8 @@ li:nth-child(even){
 }
 
 li span{
-    display: block;
+    display: inline;
+    padding: 50px;
 }
 
 li span:nth-child(2){
@@ -103,3 +104,12 @@ button{
 .bar-chart {
     background-color: #C7D9D9;
     }
+
+label{
+    padding:40px;
+    position: relative;
+}
+input{
+    padding: 10px;
+    position: relative;
+}
