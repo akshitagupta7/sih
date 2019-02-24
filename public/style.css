@@ -26,7 +26,7 @@ ul{
 }
 
 li{
-    padding: 20px;
+    padding: 5px;
     background: #f6f6f6;
     font-size: 20px;
     color: #555;
@@ -36,7 +36,7 @@ li{
 }
 
 li:nth-child(even){
-    padding: 20px;
+    padding: 5px;
     background: #f2f2f2;
 }
 
@@ -106,8 +106,8 @@ button{
     }
 
 label{
-    padding:40px;
-    position: relative;
+    padding:20px;
+
 }
 input{
     padding: 10px;

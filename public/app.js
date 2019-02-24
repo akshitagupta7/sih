@@ -7,17 +7,32 @@ function render(doc){
 	let li=document.createElement('li');
 	let name=document.createElement('span');
 	let phone=document.createElement('span');
-	let houseno=document.createElement('span');
+    let houseno=document.createElement('span');
+    let familyno=document.createElement('span');
+    let members=document.createElement('span');
+    let childrencount=document.createElement('span');
+    let expecteddd=document.createElement('span');
+    let dob=document.createElement('span');
 
+    //dataset.push(doc.data().phone);
 	li.setAttribute('data-id',doc.id);
 	name.textContent=doc.data().name;
-	phone.textContent=doc.data().phone;
-	//dataset.push(doc.data().phone);
-	houseno.textContent=doc.data().houseno;
+    phone.textContent=doc.data().phone;
+    familyno.textContent=doc.data().familyno;
+    members.textContent=doc.data().members;
+    childrencount.textContent=doc.data().childrencount;
+    houseno.textContent=doc.data().houseno;
+  //  expecteddd.textContent=new Date(doc.data().expectedd)
+   // dob.textContent=doc.data().dob;
 
+    li.appendChild(familyno);
     li.appendChild(name);
 	li.appendChild(phone);
-	li.appendChild(houseno);
+    li.appendChild(houseno);
+    li.appendChild(childrencount);
+    li.appendChild(members);
+    li.appendChild(expecteddd);
+    li.appendChild(dob);
 	list.appendChild(li);
 
 }
