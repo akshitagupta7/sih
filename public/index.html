@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <!--functions of firebase being used, we are using only firestore in app so didnt use the whole thing-->
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>DB</h1>
+
+        <div class="content">
+
+            <form id="add-elements"></form>
+            <input type="text" name="name" placeholder="Mother's Name">
+                <input type="text" name="houseno" placeholder="House No">
+
+                <input type="text" name="phoneno" placeholder="Phone Number">
+     <button id="12">filer1</button>
+     <button id="14">filer2</button>
+           <ul id="list"></ul> 
+           
+
+        </div>           
+
+<script>
+  // Initialize Firebase
+  // created the config object which has our project specs
+  var config = {
+    apiKey: "AIzaSyDwkuCzBemsM4DBIOqA4cEbqFNjYSFd-Cc",
+    authDomain: "sihproject-87ceb.firebaseapp.com",
+    databaseURL: "https://sihproject-87ceb.firebaseio.com",
+    projectId: "sihproject-87ceb",
+    storageBucket: "sihproject-87ceb.appspot.com",
+    messagingSenderId: "412273989020"
+  };
+  firebase.initializeApp(config);
+const db=firebase.firestore();
+
+</script>
+<script src="app.js"></script>
+</body>
+</html>
