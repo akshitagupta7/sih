@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE HTML>
+<html>
+<head>  
+  
+<script>
+window.onload = function () {
+
+    var chart1 = new CanvasJS.Chart("chartContainer1",{
+    title :{
+        text: "Live Data"
+    },
+    data: [{
+	type: "line",
+        dataPoints : [
+	    { label: "apple",  y: 10  },
+	    { label: "orange", y: 15  },
+	    { label: "banana", y: 25  },
+	    { label: "mango",  y: 30  },
+        { label: "grape",  y: 28  },
+        { label: "grape",  y: 28  }
+	]
+    }]
+});
+
+ 
+chart1.render();
+
+}
+</script>
+</head>
+<body>
+        <div id="chartContainer1"></div>
+        
+        <div id="chartContainer2"></div>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html> -->
+<html>
+    <head>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>GRAPHS</h1>
+        <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+        <div id="myDiv1"><!-- Plotly chart will be drawn inside this DIV --></div>
+        <div id="chartContainer1"></div>        
+     
+<script>
+  
+  var config = {
+    apiKey: "AIzaSyDwkuCzBemsM4DBIOqA4cEbqFNjYSFd-Cc",
+    authDomain: "sihproject-87ceb.firebaseapp.com",
+    databaseURL: "https://sihproject-87ceb.firebaseio.com",
+    projectId: "sihproject-87ceb",
+    storageBucket: "sihproject-87ceb.appspot.com",
+    messagingSenderId: "412273989020"
+  };
+  firebase.initializeApp(config);
+const db=firebase.firestore();
+</script>
+<script src="app2.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
