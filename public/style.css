@@ -113,3 +113,17 @@ input{
     padding: 10px;
     position: relative;
 }
+
+
+#myDiv {
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 85vh;
+    min-height: 300px;
+  }
+  #myDiv1 {
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 85vh;
+    min-height: 300px;
+  }

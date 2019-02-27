@@ -1,0 +1,14 @@
+ {
+    "accountSid": {
+      "description": "Your Twilio account SID",
+      "value": "Cf96302976ecd7b895973a7c4d1421050"
+    },
+    "authToken": {
+      "description": "Your Twilio account Auth token",      
+      "value": "4dad52c868e677ab031973f2139b1ce3"
+    },
+    "twilioNumber": {
+      "description": "Twilio phone number you are using for this app." ,
+      "value": "+16413231328"
+    }
+  }

@@ -1,5 +1,5 @@
 const list=document.querySelector('#list');
-const form = document.querySelector('#add-elements');
+//const form = document.querySelector('#add-elements');
 //var dataset=[10,20,30,40];
 
 //create elements and rendering function to display data
